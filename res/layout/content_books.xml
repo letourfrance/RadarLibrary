@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#0033CC"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_back_co"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#0033CC"
+            android:src="@drawable/main_btn_back"
+            android:scaleType="centerInside"
+             />
+
+        <Button
+            android:id="@+id/bt_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/blake"
+            android:padding="8dp"
+            android:text="查看记录"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <ImageView 
+            android:id="@+id/co_book_img"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="书名："
+                android:textSize="24sp"
+                android:textColor="@color/blake"
+                />
+            <TextView 
+                android:id="@+id/co_book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="雷达原理"
+                android:textSize="24sp"
+                android:textColor="@color/blake"
+                />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="作者："
+                android:textSize="24sp"
+                android:textColor="@color/blake"
+                />
+            <TextView 
+                android:id="@+id/co_book_autor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="雷达"
+                android:textSize="24sp"
+                android:textColor="@color/blake"
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="台站："
+                android:textSize="24sp"
+                android:textColor="@color/blake"
+                />
+            <TextView 
+                android:id="@+id/co_book_addrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="凤凰山"
+                android:textSize="24sp"
+                android:textColor="@color/blake"
+                />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类别："
+                android:textSize="24sp"
+                android:textColor="@color/blake"
+                />
+            <TextView 
+                android:id="@+id/co_book_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="科技类"
+                android:textSize="24sp"
+                android:textColor="@color/blake"
+                />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态："
+                android:textSize="24sp"
+                android:textColor="@color/blake"
+                />
+            <TextView 
+                android:id="@+id/co_book_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未借阅"
+                android:textSize="24sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/co_book_sure"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/padding_btn"
+            android:layout_marginRight="@dimen/padding_btn"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape"
+            android:onClick="onClick"
+            android:text="借阅"
+            android:textSize="24sp"
+            android:textColor="@android:color/white" />
+        
+    </LinearLayout>
+
+</LinearLayout>

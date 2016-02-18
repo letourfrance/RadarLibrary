@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView 
+                android:id="@+id/iv_books"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            >
+            <TextView 
+                android:id="@+id/tv_book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="雷达原理"
+                android:textColor="@color/blake"
+                android:textSize="18sp"
+                />
+            <TextView 
+                android:id="@+id/tv_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张蔚"
+                android:textColor="@color/blake"
+                android:textSize="15sp"
+                />
+            <TextView 
+                android:id="@+id/tv_adds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="凤凰山"
+                android:textColor="@color/blake"
+                android:textSize="15sp"
+                />
+            <TextView 
+                android:id="@+id/tv_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未借出"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical|right"
+            >
+            <ImageView 
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/right"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+</LinearLayout>

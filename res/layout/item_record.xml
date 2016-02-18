@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+     >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        >
+        
+        <TextView 
+            android:id="@+id/reco_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-11-20"
+            android:textSize="18sp"
+            android:textColor="@color/blake"
+            />
+        
+       <TextView 
+           android:id="@+id/reco_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="凤凰山小明借阅"
+            android:textSize="18sp"
+            android:textColor="@color/blake"
+            />
+        
+    </LinearLayout>
+
+    
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+      <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#0033CC"
+        >
+        <ImageButton
+            android:id="@+id/reco_ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="#0033CC"
+            android:src="@drawable/main_btn_back"
+            android:scaleType="centerInside"
+             />
+        <TextView 
+            android:id="@+id/reco_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书名"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/lv_record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" 
+        >
+        
+    </ListView>
+
+</LinearLayout>

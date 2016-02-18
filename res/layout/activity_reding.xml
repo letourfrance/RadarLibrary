@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#0033CC"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_reding_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#0033CC"
+            android:src="@drawable/main_btn_back"
+            android:scaleType="centerInside"
+             />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的书本"
+            android:textColor="@color/bg_grey"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"
+            />
+</RelativeLayout>
+        <ListView 
+            android:id="@+id/lv_reding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+        </ListView>
+
+</LinearLayout>
